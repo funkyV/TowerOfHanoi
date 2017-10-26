@@ -14,4 +14,5 @@ print '4. A*'
 while True:
     a = raw_input()
     print 'You chose ' + a
+    print 2**20-1
     
