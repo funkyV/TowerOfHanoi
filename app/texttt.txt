@@ -1,0 +1,3814 @@
+Welcome to our implementation of the 4 strategies for Tower of Hanoi. 
+Menu
+Press the number associated to each strategy to use it for the game
+1. Random
+2. Hill Climbing
+3. Backtracking
+4. A*
+5. Quit
+You chose 1
+initial state
+
+STATE
+{1: [3]}
+{2: [2, 1]}
+{3: []}
+final state
+
+STATE
+{1: []}
+{2: []}
+{3: [3, 2, 1]}
+MOVE NUMBER >
+0
+sourcePeg is
+{1: [3]}
+targetPeg is
+{2: [2, 1]}
+source and target
+{1: [3]}
+{2: [2, 1]}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 1, 3]}
+{3: []}
+MOVE NUMBER >
+1
+sourcePeg is
+{2: [2, 1, 3]}
+targetPeg is
+{3: []}
+source and target
+{2: [2, 1, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 1]}
+{3: [3]}
+MOVE NUMBER >
+2
+sourcePeg is
+{2: [2, 1]}
+targetPeg is
+{1: []}
+source and target
+{2: [2, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2]}
+{3: [3]}
+MOVE NUMBER >
+3
+sourcePeg is
+{1: [1]}
+targetPeg is
+{2: [2]}
+source and target
+{1: [1]}
+{2: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 1]}
+{3: [3]}
+MOVE NUMBER >
+4
+sourcePeg is
+{2: [2, 1]}
+targetPeg is
+{3: [3]}
+source and target
+{2: [2, 1]}
+{3: [3]}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [3, 1]}
+MOVE NUMBER >
+5
+sourcePeg is
+{3: [3, 1]}
+targetPeg is
+{1: []}
+source and target
+{3: [3, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2]}
+{3: [3]}
+MOVE NUMBER >
+6
+sourcePeg is
+{3: [3]}
+targetPeg is
+{1: [1]}
+source and target
+{3: [3]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: [2]}
+{3: []}
+MOVE NUMBER >
+7
+sourcePeg is
+{1: [1, 3]}
+targetPeg is
+{3: []}
+source and target
+{1: [1, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2]}
+{3: [3]}
+MOVE NUMBER >
+8
+sourcePeg is
+{3: [3]}
+targetPeg is
+{2: [2]}
+source and target
+{3: [3]}
+{2: [2]}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2, 3]}
+{3: []}
+MOVE NUMBER >
+9
+sourcePeg is
+{1: [1]}
+targetPeg is
+{3: []}
+source and target
+{1: [1]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 3]}
+{3: [1]}
+MOVE NUMBER >
+10
+sourcePeg is
+{2: [2, 3]}
+targetPeg is
+{3: [1]}
+source and target
+{2: [2, 3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+11
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{2: [2]}
+source and target
+{3: [1, 3]}
+{2: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 3]}
+{3: [1]}
+MOVE NUMBER >
+12
+sourcePeg is
+{2: [2, 3]}
+targetPeg is
+{1: []}
+source and target
+{2: [2, 3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2]}
+{3: [1]}
+MOVE NUMBER >
+13
+sourcePeg is
+{1: [3]}
+targetPeg is
+{2: [2]}
+source and target
+{1: [3]}
+{2: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 3]}
+{3: [1]}
+MOVE NUMBER >
+14
+sourcePeg is
+{2: [2, 3]}
+targetPeg is
+{3: [1]}
+source and target
+{2: [2, 3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+15
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{1: []}
+source and target
+{3: [1, 3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2]}
+{3: [1]}
+MOVE NUMBER >
+16
+sourcePeg is
+{2: [2]}
+targetPeg is
+{3: [1]}
+source and target
+{2: [2]}
+{3: [1]}
+
+next state
+
+STATE
+{1: [3]}
+{2: []}
+{3: [1, 2]}
+MOVE NUMBER >
+17
+sourcePeg is
+{3: [1, 2]}
+targetPeg is
+{1: [3]}
+source and target
+{3: [1, 2]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+18
+sourcePeg is
+{3: [1]}
+targetPeg is
+{1: [3, 2]}
+source and target
+{3: [1]}
+{1: [3, 2]}
+
+next state
+
+STATE
+{1: [3, 2, 1]}
+{2: []}
+{3: []}
+MOVE NUMBER >
+19
+sourcePeg is
+{1: [3, 2, 1]}
+targetPeg is
+{3: []}
+source and target
+{1: [3, 2, 1]}
+{3: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+20
+sourcePeg is
+{3: [1]}
+targetPeg is
+{2: []}
+source and target
+{3: [1]}
+{2: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+21
+sourcePeg is
+{1: [3, 2]}
+targetPeg is
+{3: []}
+source and target
+{1: [3, 2]}
+{3: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1]}
+{3: [2]}
+MOVE NUMBER >
+22
+sourcePeg is
+{2: [1]}
+targetPeg is
+{1: [3]}
+source and target
+{2: [1]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 1]}
+{2: []}
+{3: [2]}
+MOVE NUMBER >
+23
+sourcePeg is
+{1: [3, 1]}
+targetPeg is
+{2: []}
+source and target
+{1: [3, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1]}
+{3: [2]}
+MOVE NUMBER >
+24
+sourcePeg is
+{3: [2]}
+targetPeg is
+{2: [1]}
+source and target
+{3: [2]}
+{2: [1]}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1, 2]}
+{3: []}
+MOVE NUMBER >
+25
+sourcePeg is
+{1: [3]}
+targetPeg is
+{2: [1, 2]}
+source and target
+{1: [3]}
+{2: [1, 2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2, 3]}
+{3: []}
+MOVE NUMBER >
+26
+sourcePeg is
+{2: [1, 2, 3]}
+targetPeg is
+{1: []}
+source and target
+{2: [1, 2, 3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1, 2]}
+{3: []}
+MOVE NUMBER >
+27
+sourcePeg is
+{2: [1, 2]}
+targetPeg is
+{1: [3]}
+source and target
+{2: [1, 2]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+28
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: []}
+source and target
+{2: [1]}
+{3: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+29
+sourcePeg is
+{3: [1]}
+targetPeg is
+{1: [3, 2]}
+source and target
+{3: [1]}
+{1: [3, 2]}
+
+next state
+
+STATE
+{1: [3, 2, 1]}
+{2: []}
+{3: []}
+MOVE NUMBER >
+30
+sourcePeg is
+{1: [3, 2, 1]}
+targetPeg is
+{2: []}
+source and target
+{1: [3, 2, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+31
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: []}
+source and target
+{2: [1]}
+{3: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+32
+sourcePeg is
+{3: [1]}
+targetPeg is
+{2: []}
+source and target
+{3: [1]}
+{2: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+33
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: []}
+source and target
+{2: [1]}
+{3: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+34
+sourcePeg is
+{1: [3, 2]}
+targetPeg is
+{2: []}
+source and target
+{1: [3, 2]}
+{2: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2]}
+{3: [1]}
+MOVE NUMBER >
+35
+sourcePeg is
+{1: [3]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+36
+sourcePeg is
+{2: [2]}
+targetPeg is
+{1: []}
+source and target
+{2: [2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [1, 3]}
+MOVE NUMBER >
+37
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{1: [2]}
+source and target
+{3: [1, 3]}
+{1: [2]}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+38
+sourcePeg is
+{1: [2, 3]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [2, 3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [1, 3]}
+MOVE NUMBER >
+39
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{1: [2]}
+source and target
+{3: [1, 3]}
+{1: [2]}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+40
+sourcePeg is
+{3: [1]}
+targetPeg is
+{1: [2, 3]}
+source and target
+{3: [1]}
+{1: [2, 3]}
+
+next state
+
+STATE
+{1: [2, 3, 1]}
+{2: []}
+{3: []}
+MOVE NUMBER >
+41
+sourcePeg is
+{1: [2, 3, 1]}
+targetPeg is
+{3: []}
+source and target
+{1: [2, 3, 1]}
+{3: []}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+42
+sourcePeg is
+{1: [2, 3]}
+targetPeg is
+{2: []}
+source and target
+{1: [2, 3]}
+{2: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [3]}
+{3: [1]}
+MOVE NUMBER >
+43
+sourcePeg is
+{2: [3]}
+targetPeg is
+{1: [2]}
+source and target
+{2: [3]}
+{1: [2]}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+44
+sourcePeg is
+{3: [1]}
+targetPeg is
+{1: [2, 3]}
+source and target
+{3: [1]}
+{1: [2, 3]}
+
+next state
+
+STATE
+{1: [2, 3, 1]}
+{2: []}
+{3: []}
+MOVE NUMBER >
+45
+sourcePeg is
+{1: [2, 3, 1]}
+targetPeg is
+{2: []}
+source and target
+{1: [2, 3, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+46
+sourcePeg is
+{2: [1]}
+targetPeg is
+{1: [2, 3]}
+source and target
+{2: [1]}
+{1: [2, 3]}
+
+next state
+
+STATE
+{1: [2, 3, 1]}
+{2: []}
+{3: []}
+MOVE NUMBER >
+47
+sourcePeg is
+{1: [2, 3, 1]}
+targetPeg is
+{2: []}
+source and target
+{1: [2, 3, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+48
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: []}
+source and target
+{2: [1]}
+{3: []}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+49
+sourcePeg is
+{1: [2, 3]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [2, 3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [1, 3]}
+MOVE NUMBER >
+50
+sourcePeg is
+{1: [2]}
+targetPeg is
+{2: []}
+source and target
+{1: [2]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+51
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{2: [2]}
+source and target
+{3: [1, 3]}
+{2: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 3]}
+{3: [1]}
+MOVE NUMBER >
+52
+sourcePeg is
+{3: [1]}
+targetPeg is
+{2: [2, 3]}
+source and target
+{3: [1]}
+{2: [2, 3]}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 3, 1]}
+{3: []}
+MOVE NUMBER >
+53
+sourcePeg is
+{2: [2, 3, 1]}
+targetPeg is
+{1: []}
+source and target
+{2: [2, 3, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2, 3]}
+{3: []}
+MOVE NUMBER >
+54
+sourcePeg is
+{1: [1]}
+targetPeg is
+{2: [2, 3]}
+source and target
+{1: [1]}
+{2: [2, 3]}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 3, 1]}
+{3: []}
+MOVE NUMBER >
+55
+sourcePeg is
+{2: [2, 3, 1]}
+targetPeg is
+{1: []}
+source and target
+{2: [2, 3, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2, 3]}
+{3: []}
+MOVE NUMBER >
+56
+sourcePeg is
+{1: [1]}
+targetPeg is
+{3: []}
+source and target
+{1: [1]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 3]}
+{3: [1]}
+MOVE NUMBER >
+57
+sourcePeg is
+{2: [2, 3]}
+targetPeg is
+{3: [1]}
+source and target
+{2: [2, 3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+58
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{1: []}
+source and target
+{3: [1, 3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2]}
+{3: [1]}
+MOVE NUMBER >
+59
+sourcePeg is
+{1: [3]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+60
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{1: []}
+source and target
+{3: [1, 3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2]}
+{3: [1]}
+MOVE NUMBER >
+61
+sourcePeg is
+{1: [3]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+62
+sourcePeg is
+{2: [2]}
+targetPeg is
+{3: [1, 3]}
+source and target
+{2: [2]}
+{3: [1, 3]}
+
+next state
+
+STATE
+{1: []}
+{2: []}
+{3: [1, 3, 2]}
+MOVE NUMBER >
+63
+sourcePeg is
+{3: [1, 3, 2]}
+targetPeg is
+{1: []}
+source and target
+{3: [1, 3, 2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [1, 3]}
+MOVE NUMBER >
+64
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{1: [2]}
+source and target
+{3: [1, 3]}
+{1: [2]}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+65
+sourcePeg is
+{3: [1]}
+targetPeg is
+{1: [2, 3]}
+source and target
+{3: [1]}
+{1: [2, 3]}
+
+next state
+
+STATE
+{1: [2, 3, 1]}
+{2: []}
+{3: []}
+MOVE NUMBER >
+66
+sourcePeg is
+{1: [2, 3, 1]}
+targetPeg is
+{3: []}
+source and target
+{1: [2, 3, 1]}
+{3: []}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+67
+sourcePeg is
+{3: [1]}
+targetPeg is
+{2: []}
+source and target
+{3: [1]}
+{2: []}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+68
+sourcePeg is
+{1: [2, 3]}
+targetPeg is
+{2: [1]}
+source and target
+{1: [2, 3]}
+{2: [1]}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1, 3]}
+{3: []}
+MOVE NUMBER >
+69
+sourcePeg is
+{2: [1, 3]}
+targetPeg is
+{3: []}
+source and target
+{2: [1, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1]}
+{3: [3]}
+MOVE NUMBER >
+70
+sourcePeg is
+{2: [1]}
+targetPeg is
+{1: [2]}
+source and target
+{2: [1]}
+{1: [2]}
+
+next state
+
+STATE
+{1: [2, 1]}
+{2: []}
+{3: [3]}
+MOVE NUMBER >
+71
+sourcePeg is
+{1: [2, 1]}
+targetPeg is
+{3: [3]}
+source and target
+{1: [2, 1]}
+{3: [3]}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [3, 1]}
+MOVE NUMBER >
+72
+sourcePeg is
+{1: [2]}
+targetPeg is
+{2: []}
+source and target
+{1: [2]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [3, 1]}
+MOVE NUMBER >
+73
+sourcePeg is
+{3: [3, 1]}
+targetPeg is
+{1: []}
+source and target
+{3: [3, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2]}
+{3: [3]}
+MOVE NUMBER >
+74
+sourcePeg is
+{3: [3]}
+targetPeg is
+{1: [1]}
+source and target
+{3: [3]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: [2]}
+{3: []}
+MOVE NUMBER >
+75
+sourcePeg is
+{2: [2]}
+targetPeg is
+{3: []}
+source and target
+{2: [2]}
+{3: []}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: []}
+{3: [2]}
+MOVE NUMBER >
+76
+sourcePeg is
+{1: [1, 3]}
+targetPeg is
+{3: [2]}
+source and target
+{1: [1, 3]}
+{3: [2]}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [2, 3]}
+MOVE NUMBER >
+77
+sourcePeg is
+{1: [1]}
+targetPeg is
+{2: []}
+source and target
+{1: [1]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [2, 3]}
+MOVE NUMBER >
+78
+sourcePeg is
+{2: [1]}
+targetPeg is
+{1: []}
+source and target
+{2: [1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [2, 3]}
+MOVE NUMBER >
+79
+sourcePeg is
+{3: [2, 3]}
+targetPeg is
+{1: [1]}
+source and target
+{3: [2, 3]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: []}
+{3: [2]}
+MOVE NUMBER >
+80
+sourcePeg is
+{1: [1, 3]}
+targetPeg is
+{3: [2]}
+source and target
+{1: [1, 3]}
+{3: [2]}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [2, 3]}
+MOVE NUMBER >
+81
+sourcePeg is
+{3: [2, 3]}
+targetPeg is
+{2: []}
+source and target
+{3: [2, 3]}
+{2: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [3]}
+{3: [2]}
+MOVE NUMBER >
+82
+sourcePeg is
+{1: [1]}
+targetPeg is
+{2: [3]}
+source and target
+{1: [1]}
+{2: [3]}
+
+next state
+
+STATE
+{1: []}
+{2: [3, 1]}
+{3: [2]}
+MOVE NUMBER >
+83
+sourcePeg is
+{2: [3, 1]}
+targetPeg is
+{3: [2]}
+source and target
+{2: [3, 1]}
+{3: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [3]}
+{3: [2, 1]}
+MOVE NUMBER >
+84
+sourcePeg is
+{3: [2, 1]}
+targetPeg is
+{2: [3]}
+source and target
+{3: [2, 1]}
+{2: [3]}
+
+next state
+
+STATE
+{1: []}
+{2: [3, 1]}
+{3: [2]}
+MOVE NUMBER >
+85
+sourcePeg is
+{3: [2]}
+targetPeg is
+{1: []}
+source and target
+{3: [2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [3, 1]}
+{3: []}
+MOVE NUMBER >
+86
+sourcePeg is
+{2: [3, 1]}
+targetPeg is
+{3: []}
+source and target
+{2: [3, 1]}
+{3: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [3]}
+{3: [1]}
+MOVE NUMBER >
+87
+sourcePeg is
+{2: [3]}
+targetPeg is
+{3: [1]}
+source and target
+{2: [3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [1, 3]}
+MOVE NUMBER >
+88
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{2: []}
+source and target
+{3: [1, 3]}
+{2: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [3]}
+{3: [1]}
+MOVE NUMBER >
+89
+sourcePeg is
+{1: [2]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [2]}
+{3: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [3]}
+{3: [1, 2]}
+MOVE NUMBER >
+90
+sourcePeg is
+{3: [1, 2]}
+targetPeg is
+{1: []}
+source and target
+{3: [1, 2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [3]}
+{3: [1]}
+MOVE NUMBER >
+91
+sourcePeg is
+{3: [1]}
+targetPeg is
+{2: [3]}
+source and target
+{3: [1]}
+{2: [3]}
+
+next state
+
+STATE
+{1: [2]}
+{2: [3, 1]}
+{3: []}
+MOVE NUMBER >
+92
+sourcePeg is
+{2: [3, 1]}
+targetPeg is
+{3: []}
+source and target
+{2: [3, 1]}
+{3: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [3]}
+{3: [1]}
+MOVE NUMBER >
+93
+sourcePeg is
+{2: [3]}
+targetPeg is
+{1: [2]}
+source and target
+{2: [3]}
+{1: [2]}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+94
+sourcePeg is
+{3: [1]}
+targetPeg is
+{2: []}
+source and target
+{3: [1]}
+{2: []}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+95
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: []}
+source and target
+{2: [1]}
+{3: []}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+96
+sourcePeg is
+{1: [2, 3]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [2, 3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [1, 3]}
+MOVE NUMBER >
+97
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{1: [2]}
+source and target
+{3: [1, 3]}
+{1: [2]}
+
+next state
+
+STATE
+{1: [2, 3]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+98
+sourcePeg is
+{1: [2, 3]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [2, 3]}
+{3: [1]}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [1, 3]}
+MOVE NUMBER >
+99
+sourcePeg is
+{1: [2]}
+targetPeg is
+{2: []}
+source and target
+{1: [2]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+100
+sourcePeg is
+{2: [2]}
+targetPeg is
+{1: []}
+source and target
+{2: [2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [1, 3]}
+MOVE NUMBER >
+101
+sourcePeg is
+{1: [2]}
+targetPeg is
+{3: [1, 3]}
+source and target
+{1: [2]}
+{3: [1, 3]}
+
+next state
+
+STATE
+{1: []}
+{2: []}
+{3: [1, 3, 2]}
+MOVE NUMBER >
+102
+sourcePeg is
+{3: [1, 3, 2]}
+targetPeg is
+{2: []}
+source and target
+{3: [1, 3, 2]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+103
+sourcePeg is
+{2: [2]}
+targetPeg is
+{1: []}
+source and target
+{2: [2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [1, 3]}
+MOVE NUMBER >
+104
+sourcePeg is
+{1: [2]}
+targetPeg is
+{2: []}
+source and target
+{1: [2]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+105
+sourcePeg is
+{2: [2]}
+targetPeg is
+{3: [1, 3]}
+source and target
+{2: [2]}
+{3: [1, 3]}
+
+next state
+
+STATE
+{1: []}
+{2: []}
+{3: [1, 3, 2]}
+MOVE NUMBER >
+106
+sourcePeg is
+{3: [1, 3, 2]}
+targetPeg is
+{2: []}
+source and target
+{3: [1, 3, 2]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [2]}
+{3: [1, 3]}
+MOVE NUMBER >
+107
+sourcePeg is
+{3: [1, 3]}
+targetPeg is
+{2: [2]}
+source and target
+{3: [1, 3]}
+{2: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 3]}
+{3: [1]}
+MOVE NUMBER >
+108
+sourcePeg is
+{2: [2, 3]}
+targetPeg is
+{1: []}
+source and target
+{2: [2, 3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2]}
+{3: [1]}
+MOVE NUMBER >
+109
+sourcePeg is
+{2: [2]}
+targetPeg is
+{1: [3]}
+source and target
+{2: [2]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+110
+sourcePeg is
+{1: [3, 2]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [3, 2]}
+{3: [1]}
+
+next state
+
+STATE
+{1: [3]}
+{2: []}
+{3: [1, 2]}
+MOVE NUMBER >
+111
+sourcePeg is
+{1: [3]}
+targetPeg is
+{2: []}
+source and target
+{1: [3]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [3]}
+{3: [1, 2]}
+MOVE NUMBER >
+112
+sourcePeg is
+{2: [3]}
+targetPeg is
+{1: []}
+source and target
+{2: [3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: []}
+{3: [1, 2]}
+MOVE NUMBER >
+113
+sourcePeg is
+{1: [3]}
+targetPeg is
+{2: []}
+source and target
+{1: [3]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [3]}
+{3: [1, 2]}
+MOVE NUMBER >
+114
+sourcePeg is
+{2: [3]}
+targetPeg is
+{1: []}
+source and target
+{2: [3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: []}
+{3: [1, 2]}
+MOVE NUMBER >
+115
+sourcePeg is
+{1: [3]}
+targetPeg is
+{2: []}
+source and target
+{1: [3]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [3]}
+{3: [1, 2]}
+MOVE NUMBER >
+116
+sourcePeg is
+{3: [1, 2]}
+targetPeg is
+{1: []}
+source and target
+{3: [1, 2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [3]}
+{3: [1]}
+MOVE NUMBER >
+117
+sourcePeg is
+{1: [2]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [2]}
+{3: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [3]}
+{3: [1, 2]}
+MOVE NUMBER >
+118
+sourcePeg is
+{2: [3]}
+targetPeg is
+{1: []}
+source and target
+{2: [3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: []}
+{3: [1, 2]}
+MOVE NUMBER >
+119
+sourcePeg is
+{3: [1, 2]}
+targetPeg is
+{2: []}
+source and target
+{3: [1, 2]}
+{2: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2]}
+{3: [1]}
+MOVE NUMBER >
+120
+sourcePeg is
+{2: [2]}
+targetPeg is
+{1: [3]}
+source and target
+{2: [2]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+121
+sourcePeg is
+{1: [3, 2]}
+targetPeg is
+{3: [1]}
+source and target
+{1: [3, 2]}
+{3: [1]}
+
+next state
+
+STATE
+{1: [3]}
+{2: []}
+{3: [1, 2]}
+MOVE NUMBER >
+122
+sourcePeg is
+{3: [1, 2]}
+targetPeg is
+{1: [3]}
+source and target
+{3: [1, 2]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+123
+sourcePeg is
+{3: [1]}
+targetPeg is
+{2: []}
+source and target
+{3: [1]}
+{2: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+124
+sourcePeg is
+{2: [1]}
+targetPeg is
+{1: [3, 2]}
+source and target
+{2: [1]}
+{1: [3, 2]}
+
+next state
+
+STATE
+{1: [3, 2, 1]}
+{2: []}
+{3: []}
+MOVE NUMBER >
+125
+sourcePeg is
+{1: [3, 2, 1]}
+targetPeg is
+{2: []}
+source and target
+{1: [3, 2, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+126
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: []}
+source and target
+{2: [1]}
+{3: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+127
+sourcePeg is
+{3: [1]}
+targetPeg is
+{1: [3, 2]}
+source and target
+{3: [1]}
+{1: [3, 2]}
+
+next state
+
+STATE
+{1: [3, 2, 1]}
+{2: []}
+{3: []}
+MOVE NUMBER >
+128
+sourcePeg is
+{1: [3, 2, 1]}
+targetPeg is
+{3: []}
+source and target
+{1: [3, 2, 1]}
+{3: []}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: []}
+{3: [1]}
+MOVE NUMBER >
+129
+sourcePeg is
+{1: [3, 2]}
+targetPeg is
+{2: []}
+source and target
+{1: [3, 2]}
+{2: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2]}
+{3: [1]}
+MOVE NUMBER >
+130
+sourcePeg is
+{3: [1]}
+targetPeg is
+{1: [3]}
+source and target
+{3: [1]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 1]}
+{2: [2]}
+{3: []}
+MOVE NUMBER >
+131
+sourcePeg is
+{1: [3, 1]}
+targetPeg is
+{2: [2]}
+source and target
+{1: [3, 1]}
+{2: [2]}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2, 1]}
+{3: []}
+MOVE NUMBER >
+132
+sourcePeg is
+{2: [2, 1]}
+targetPeg is
+{1: [3]}
+source and target
+{2: [2, 1]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 1]}
+{2: [2]}
+{3: []}
+MOVE NUMBER >
+133
+sourcePeg is
+{1: [3, 1]}
+targetPeg is
+{3: []}
+source and target
+{1: [3, 1]}
+{3: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [2]}
+{3: [1]}
+MOVE NUMBER >
+134
+sourcePeg is
+{3: [1]}
+targetPeg is
+{1: [3]}
+source and target
+{3: [1]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 1]}
+{2: [2]}
+{3: []}
+MOVE NUMBER >
+135
+sourcePeg is
+{2: [2]}
+targetPeg is
+{3: []}
+source and target
+{2: [2]}
+{3: []}
+
+next state
+
+STATE
+{1: [3, 1]}
+{2: []}
+{3: [2]}
+MOVE NUMBER >
+136
+sourcePeg is
+{1: [3, 1]}
+targetPeg is
+{3: [2]}
+source and target
+{1: [3, 1]}
+{3: [2]}
+
+next state
+
+STATE
+{1: [3]}
+{2: []}
+{3: [2, 1]}
+MOVE NUMBER >
+137
+sourcePeg is
+{3: [2, 1]}
+targetPeg is
+{2: []}
+source and target
+{3: [2, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1]}
+{3: [2]}
+MOVE NUMBER >
+138
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: [2]}
+source and target
+{2: [1]}
+{3: [2]}
+
+next state
+
+STATE
+{1: [3]}
+{2: []}
+{3: [2, 1]}
+MOVE NUMBER >
+139
+sourcePeg is
+{3: [2, 1]}
+targetPeg is
+{2: []}
+source and target
+{3: [2, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1]}
+{3: [2]}
+MOVE NUMBER >
+140
+sourcePeg is
+{1: [3]}
+targetPeg is
+{3: [2]}
+source and target
+{1: [3]}
+{3: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [2, 3]}
+MOVE NUMBER >
+141
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: [2, 3]}
+source and target
+{2: [1]}
+{3: [2, 3]}
+
+next state
+
+STATE
+{1: []}
+{2: []}
+{3: [2, 3, 1]}
+MOVE NUMBER >
+142
+sourcePeg is
+{3: [2, 3, 1]}
+targetPeg is
+{1: []}
+source and target
+{3: [2, 3, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [2, 3]}
+MOVE NUMBER >
+143
+sourcePeg is
+{1: [1]}
+targetPeg is
+{3: [2, 3]}
+source and target
+{1: [1]}
+{3: [2, 3]}
+
+next state
+
+STATE
+{1: []}
+{2: []}
+{3: [2, 3, 1]}
+MOVE NUMBER >
+144
+sourcePeg is
+{3: [2, 3, 1]}
+targetPeg is
+{2: []}
+source and target
+{3: [2, 3, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [2, 3]}
+MOVE NUMBER >
+145
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: [2, 3]}
+source and target
+{2: [1]}
+{3: [2, 3]}
+
+next state
+
+STATE
+{1: []}
+{2: []}
+{3: [2, 3, 1]}
+MOVE NUMBER >
+146
+sourcePeg is
+{3: [2, 3, 1]}
+targetPeg is
+{1: []}
+source and target
+{3: [2, 3, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [2, 3]}
+MOVE NUMBER >
+147
+sourcePeg is
+{3: [2, 3]}
+targetPeg is
+{1: [1]}
+source and target
+{3: [2, 3]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: []}
+{3: [2]}
+MOVE NUMBER >
+148
+sourcePeg is
+{1: [1, 3]}
+targetPeg is
+{2: []}
+source and target
+{1: [1, 3]}
+{2: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [3]}
+{3: [2]}
+MOVE NUMBER >
+149
+sourcePeg is
+{3: [2]}
+targetPeg is
+{1: [1]}
+source and target
+{3: [2]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 2]}
+{2: [3]}
+{3: []}
+MOVE NUMBER >
+150
+sourcePeg is
+{1: [1, 2]}
+targetPeg is
+{2: [3]}
+source and target
+{1: [1, 2]}
+{2: [3]}
+
+next state
+
+STATE
+{1: [1]}
+{2: [3, 2]}
+{3: []}
+MOVE NUMBER >
+151
+sourcePeg is
+{2: [3, 2]}
+targetPeg is
+{1: [1]}
+source and target
+{2: [3, 2]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 2]}
+{2: [3]}
+{3: []}
+MOVE NUMBER >
+152
+sourcePeg is
+{2: [3]}
+targetPeg is
+{3: []}
+source and target
+{2: [3]}
+{3: []}
+
+next state
+
+STATE
+{1: [1, 2]}
+{2: []}
+{3: [3]}
+MOVE NUMBER >
+153
+sourcePeg is
+{1: [1, 2]}
+targetPeg is
+{3: [3]}
+source and target
+{1: [1, 2]}
+{3: [3]}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [3, 2]}
+MOVE NUMBER >
+154
+sourcePeg is
+{3: [3, 2]}
+targetPeg is
+{2: []}
+source and target
+{3: [3, 2]}
+{2: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2]}
+{3: [3]}
+MOVE NUMBER >
+155
+sourcePeg is
+{2: [2]}
+targetPeg is
+{3: [3]}
+source and target
+{2: [2]}
+{3: [3]}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [3, 2]}
+MOVE NUMBER >
+156
+sourcePeg is
+{3: [3, 2]}
+targetPeg is
+{1: [1]}
+source and target
+{3: [3, 2]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 2]}
+{2: []}
+{3: [3]}
+MOVE NUMBER >
+157
+sourcePeg is
+{1: [1, 2]}
+targetPeg is
+{2: []}
+source and target
+{1: [1, 2]}
+{2: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2]}
+{3: [3]}
+MOVE NUMBER >
+158
+sourcePeg is
+{2: [2]}
+targetPeg is
+{3: [3]}
+source and target
+{2: [2]}
+{3: [3]}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [3, 2]}
+MOVE NUMBER >
+159
+sourcePeg is
+{3: [3, 2]}
+targetPeg is
+{2: []}
+source and target
+{3: [3, 2]}
+{2: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2]}
+{3: [3]}
+MOVE NUMBER >
+160
+sourcePeg is
+{3: [3]}
+targetPeg is
+{1: [1]}
+source and target
+{3: [3]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: [2]}
+{3: []}
+MOVE NUMBER >
+161
+sourcePeg is
+{1: [1, 3]}
+targetPeg is
+{3: []}
+source and target
+{1: [1, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2]}
+{3: [3]}
+MOVE NUMBER >
+162
+sourcePeg is
+{2: [2]}
+targetPeg is
+{3: [3]}
+source and target
+{2: [2]}
+{3: [3]}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [3, 2]}
+MOVE NUMBER >
+163
+sourcePeg is
+{1: [1]}
+targetPeg is
+{2: []}
+source and target
+{1: [1]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [3, 2]}
+MOVE NUMBER >
+164
+sourcePeg is
+{3: [3, 2]}
+targetPeg is
+{1: []}
+source and target
+{3: [3, 2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1]}
+{3: [3]}
+MOVE NUMBER >
+165
+sourcePeg is
+{1: [2]}
+targetPeg is
+{2: [1]}
+source and target
+{1: [2]}
+{2: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+166
+sourcePeg is
+{2: [1, 2]}
+targetPeg is
+{1: []}
+source and target
+{2: [1, 2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1]}
+{3: [3]}
+MOVE NUMBER >
+167
+sourcePeg is
+{1: [2]}
+targetPeg is
+{2: [1]}
+source and target
+{1: [2]}
+{2: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+168
+sourcePeg is
+{2: [1, 2]}
+targetPeg is
+{1: []}
+source and target
+{2: [1, 2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1]}
+{3: [3]}
+MOVE NUMBER >
+169
+sourcePeg is
+{1: [2]}
+targetPeg is
+{2: [1]}
+source and target
+{1: [2]}
+{2: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+170
+sourcePeg is
+{3: [3]}
+targetPeg is
+{2: [1, 2]}
+source and target
+{3: [3]}
+{2: [1, 2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2, 3]}
+{3: []}
+MOVE NUMBER >
+171
+sourcePeg is
+{2: [1, 2, 3]}
+targetPeg is
+{3: []}
+source and target
+{2: [1, 2, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+172
+sourcePeg is
+{3: [3]}
+targetPeg is
+{2: [1, 2]}
+source and target
+{3: [3]}
+{2: [1, 2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2, 3]}
+{3: []}
+MOVE NUMBER >
+173
+sourcePeg is
+{2: [1, 2, 3]}
+targetPeg is
+{3: []}
+source and target
+{2: [1, 2, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+174
+sourcePeg is
+{2: [1, 2]}
+targetPeg is
+{3: [3]}
+source and target
+{2: [1, 2]}
+{3: [3]}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [3, 2]}
+MOVE NUMBER >
+175
+sourcePeg is
+{2: [1]}
+targetPeg is
+{1: []}
+source and target
+{2: [1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [3, 2]}
+MOVE NUMBER >
+176
+sourcePeg is
+{1: [1]}
+targetPeg is
+{2: []}
+source and target
+{1: [1]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [3, 2]}
+MOVE NUMBER >
+177
+sourcePeg is
+{3: [3, 2]}
+targetPeg is
+{1: []}
+source and target
+{3: [3, 2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1]}
+{3: [3]}
+MOVE NUMBER >
+178
+sourcePeg is
+{2: [1]}
+targetPeg is
+{1: [2]}
+source and target
+{2: [1]}
+{1: [2]}
+
+next state
+
+STATE
+{1: [2, 1]}
+{2: []}
+{3: [3]}
+MOVE NUMBER >
+179
+sourcePeg is
+{1: [2, 1]}
+targetPeg is
+{3: [3]}
+source and target
+{1: [2, 1]}
+{3: [3]}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [3, 1]}
+MOVE NUMBER >
+180
+sourcePeg is
+{3: [3, 1]}
+targetPeg is
+{1: [2]}
+source and target
+{3: [3, 1]}
+{1: [2]}
+
+next state
+
+STATE
+{1: [2, 1]}
+{2: []}
+{3: [3]}
+MOVE NUMBER >
+181
+sourcePeg is
+{1: [2, 1]}
+targetPeg is
+{3: [3]}
+source and target
+{1: [2, 1]}
+{3: [3]}
+
+next state
+
+STATE
+{1: [2]}
+{2: []}
+{3: [3, 1]}
+MOVE NUMBER >
+182
+sourcePeg is
+{3: [3, 1]}
+targetPeg is
+{2: []}
+source and target
+{3: [3, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1]}
+{3: [3]}
+MOVE NUMBER >
+183
+sourcePeg is
+{1: [2]}
+targetPeg is
+{3: [3]}
+source and target
+{1: [2]}
+{3: [3]}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [3, 2]}
+MOVE NUMBER >
+184
+sourcePeg is
+{2: [1]}
+targetPeg is
+{1: []}
+source and target
+{2: [1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [3, 2]}
+MOVE NUMBER >
+185
+sourcePeg is
+{1: [1]}
+targetPeg is
+{2: []}
+source and target
+{1: [1]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [3, 2]}
+MOVE NUMBER >
+186
+sourcePeg is
+{3: [3, 2]}
+targetPeg is
+{2: [1]}
+source and target
+{3: [3, 2]}
+{2: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+187
+sourcePeg is
+{2: [1, 2]}
+targetPeg is
+{1: []}
+source and target
+{2: [1, 2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1]}
+{3: [3]}
+MOVE NUMBER >
+188
+sourcePeg is
+{1: [2]}
+targetPeg is
+{2: [1]}
+source and target
+{1: [2]}
+{2: [1]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+189
+sourcePeg is
+{3: [3]}
+targetPeg is
+{1: []}
+source and target
+{3: [3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1, 2]}
+{3: []}
+MOVE NUMBER >
+190
+sourcePeg is
+{2: [1, 2]}
+targetPeg is
+{1: [3]}
+source and target
+{2: [1, 2]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+191
+sourcePeg is
+{1: [3, 2]}
+targetPeg is
+{2: [1]}
+source and target
+{1: [3, 2]}
+{2: [1]}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1, 2]}
+{3: []}
+MOVE NUMBER >
+192
+sourcePeg is
+{1: [3]}
+targetPeg is
+{2: [1, 2]}
+source and target
+{1: [3]}
+{2: [1, 2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2, 3]}
+{3: []}
+MOVE NUMBER >
+193
+sourcePeg is
+{2: [1, 2, 3]}
+targetPeg is
+{3: []}
+source and target
+{2: [1, 2, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+194
+sourcePeg is
+{3: [3]}
+targetPeg is
+{2: [1, 2]}
+source and target
+{3: [3]}
+{2: [1, 2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2, 3]}
+{3: []}
+MOVE NUMBER >
+195
+sourcePeg is
+{2: [1, 2, 3]}
+targetPeg is
+{3: []}
+source and target
+{2: [1, 2, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+196
+sourcePeg is
+{3: [3]}
+targetPeg is
+{2: [1, 2]}
+source and target
+{3: [3]}
+{2: [1, 2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2, 3]}
+{3: []}
+MOVE NUMBER >
+197
+sourcePeg is
+{2: [1, 2, 3]}
+targetPeg is
+{3: []}
+source and target
+{2: [1, 2, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+198
+sourcePeg is
+{3: [3]}
+targetPeg is
+{2: [1, 2]}
+source and target
+{3: [3]}
+{2: [1, 2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2, 3]}
+{3: []}
+MOVE NUMBER >
+199
+sourcePeg is
+{2: [1, 2, 3]}
+targetPeg is
+{1: []}
+source and target
+{2: [1, 2, 3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1, 2]}
+{3: []}
+MOVE NUMBER >
+200
+sourcePeg is
+{2: [1, 2]}
+targetPeg is
+{1: [3]}
+source and target
+{2: [1, 2]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 2]}
+{2: [1]}
+{3: []}
+MOVE NUMBER >
+201
+sourcePeg is
+{1: [3, 2]}
+targetPeg is
+{3: []}
+source and target
+{1: [3, 2]}
+{3: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1]}
+{3: [2]}
+MOVE NUMBER >
+202
+sourcePeg is
+{2: [1]}
+targetPeg is
+{1: [3]}
+source and target
+{2: [1]}
+{1: [3]}
+
+next state
+
+STATE
+{1: [3, 1]}
+{2: []}
+{3: [2]}
+MOVE NUMBER >
+203
+sourcePeg is
+{1: [3, 1]}
+targetPeg is
+{2: []}
+source and target
+{1: [3, 1]}
+{2: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1]}
+{3: [2]}
+MOVE NUMBER >
+204
+sourcePeg is
+{1: [3]}
+targetPeg is
+{3: [2]}
+source and target
+{1: [3]}
+{3: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [2, 3]}
+MOVE NUMBER >
+205
+sourcePeg is
+{3: [2, 3]}
+targetPeg is
+{1: []}
+source and target
+{3: [2, 3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1]}
+{3: [2]}
+MOVE NUMBER >
+206
+sourcePeg is
+{3: [2]}
+targetPeg is
+{2: [1]}
+source and target
+{3: [2]}
+{2: [1]}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1, 2]}
+{3: []}
+MOVE NUMBER >
+207
+sourcePeg is
+{1: [3]}
+targetPeg is
+{3: []}
+source and target
+{1: [3]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 2]}
+{3: [3]}
+MOVE NUMBER >
+208
+sourcePeg is
+{2: [1, 2]}
+targetPeg is
+{1: []}
+source and target
+{2: [1, 2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1]}
+{3: [3]}
+MOVE NUMBER >
+209
+sourcePeg is
+{3: [3]}
+targetPeg is
+{2: [1]}
+source and target
+{3: [3]}
+{2: [1]}
+
+next state
+
+STATE
+{1: [2]}
+{2: [1, 3]}
+{3: []}
+MOVE NUMBER >
+210
+sourcePeg is
+{1: [2]}
+targetPeg is
+{3: []}
+source and target
+{1: [2]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [1, 3]}
+{3: [2]}
+MOVE NUMBER >
+211
+sourcePeg is
+{2: [1, 3]}
+targetPeg is
+{3: [2]}
+source and target
+{2: [1, 3]}
+{3: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [1]}
+{3: [2, 3]}
+MOVE NUMBER >
+212
+sourcePeg is
+{3: [2, 3]}
+targetPeg is
+{1: []}
+source and target
+{3: [2, 3]}
+{1: []}
+
+next state
+
+STATE
+{1: [3]}
+{2: [1]}
+{3: [2]}
+MOVE NUMBER >
+213
+sourcePeg is
+{2: [1]}
+targetPeg is
+{3: [2]}
+source and target
+{2: [1]}
+{3: [2]}
+
+next state
+
+STATE
+{1: [3]}
+{2: []}
+{3: [2, 1]}
+MOVE NUMBER >
+214
+sourcePeg is
+{1: [3]}
+targetPeg is
+{2: []}
+source and target
+{1: [3]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [3]}
+{3: [2, 1]}
+MOVE NUMBER >
+215
+sourcePeg is
+{3: [2, 1]}
+targetPeg is
+{2: [3]}
+source and target
+{3: [2, 1]}
+{2: [3]}
+
+next state
+
+STATE
+{1: []}
+{2: [3, 1]}
+{3: [2]}
+MOVE NUMBER >
+216
+sourcePeg is
+{3: [2]}
+targetPeg is
+{1: []}
+source and target
+{3: [2]}
+{1: []}
+
+next state
+
+STATE
+{1: [2]}
+{2: [3, 1]}
+{3: []}
+MOVE NUMBER >
+217
+sourcePeg is
+{1: [2]}
+targetPeg is
+{3: []}
+source and target
+{1: [2]}
+{3: []}
+
+next state
+
+STATE
+{1: []}
+{2: [3, 1]}
+{3: [2]}
+MOVE NUMBER >
+218
+sourcePeg is
+{2: [3, 1]}
+targetPeg is
+{1: []}
+source and target
+{2: [3, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [3]}
+{3: [2]}
+MOVE NUMBER >
+219
+sourcePeg is
+{1: [1]}
+targetPeg is
+{2: [3]}
+source and target
+{1: [1]}
+{2: [3]}
+
+next state
+
+STATE
+{1: []}
+{2: [3, 1]}
+{3: [2]}
+MOVE NUMBER >
+220
+sourcePeg is
+{2: [3, 1]}
+targetPeg is
+{3: [2]}
+source and target
+{2: [3, 1]}
+{3: [2]}
+
+next state
+
+STATE
+{1: []}
+{2: [3]}
+{3: [2, 1]}
+MOVE NUMBER >
+221
+sourcePeg is
+{2: [3]}
+targetPeg is
+{3: [2, 1]}
+source and target
+{2: [3]}
+{3: [2, 1]}
+
+next state
+
+STATE
+{1: []}
+{2: []}
+{3: [2, 1, 3]}
+MOVE NUMBER >
+222
+sourcePeg is
+{3: [2, 1, 3]}
+targetPeg is
+{2: []}
+source and target
+{3: [2, 1, 3]}
+{2: []}
+
+next state
+
+STATE
+{1: []}
+{2: [3]}
+{3: [2, 1]}
+MOVE NUMBER >
+223
+sourcePeg is
+{3: [2, 1]}
+targetPeg is
+{2: [3]}
+source and target
+{3: [2, 1]}
+{2: [3]}
+
+next state
+
+STATE
+{1: []}
+{2: [3, 1]}
+{3: [2]}
+MOVE NUMBER >
+224
+sourcePeg is
+{2: [3, 1]}
+targetPeg is
+{1: []}
+source and target
+{2: [3, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [3]}
+{3: [2]}
+MOVE NUMBER >
+225
+sourcePeg is
+{2: [3]}
+targetPeg is
+{1: [1]}
+source and target
+{2: [3]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: []}
+{3: [2]}
+MOVE NUMBER >
+226
+sourcePeg is
+{3: [2]}
+targetPeg is
+{2: []}
+source and target
+{3: [2]}
+{2: []}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: [2]}
+{3: []}
+MOVE NUMBER >
+227
+sourcePeg is
+{1: [1, 3]}
+targetPeg is
+{2: [2]}
+source and target
+{1: [1, 3]}
+{2: [2]}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2, 3]}
+{3: []}
+MOVE NUMBER >
+228
+sourcePeg is
+{1: [1]}
+targetPeg is
+{2: [2, 3]}
+source and target
+{1: [1]}
+{2: [2, 3]}
+
+next state
+
+STATE
+{1: []}
+{2: [2, 3, 1]}
+{3: []}
+MOVE NUMBER >
+229
+sourcePeg is
+{2: [2, 3, 1]}
+targetPeg is
+{1: []}
+source and target
+{2: [2, 3, 1]}
+{1: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2, 3]}
+{3: []}
+MOVE NUMBER >
+230
+sourcePeg is
+{2: [2, 3]}
+targetPeg is
+{1: [1]}
+source and target
+{2: [2, 3]}
+{1: [1]}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: [2]}
+{3: []}
+MOVE NUMBER >
+231
+sourcePeg is
+{2: [2]}
+targetPeg is
+{1: [1, 3]}
+source and target
+{2: [2]}
+{1: [1, 3]}
+
+next state
+
+STATE
+{1: [1, 3, 2]}
+{2: []}
+{3: []}
+MOVE NUMBER >
+232
+sourcePeg is
+{1: [1, 3, 2]}
+targetPeg is
+{2: []}
+source and target
+{1: [1, 3, 2]}
+{2: []}
+
+next state
+
+STATE
+{1: [1, 3]}
+{2: [2]}
+{3: []}
+MOVE NUMBER >
+233
+sourcePeg is
+{1: [1, 3]}
+targetPeg is
+{2: [2]}
+source and target
+{1: [1, 3]}
+{2: [2]}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2, 3]}
+{3: []}
+MOVE NUMBER >
+234
+sourcePeg is
+{2: [2, 3]}
+targetPeg is
+{3: []}
+source and target
+{2: [2, 3]}
+{3: []}
+
+next state
+
+STATE
+{1: [1]}
+{2: [2]}
+{3: [3]}
+MOVE NUMBER >
+235
+sourcePeg is
+{2: [2]}
+targetPeg is
+{3: [3]}
+source and target
+{2: [2]}
+{3: [3]}
+
+next state
+
+STATE
+{1: [1]}
+{2: []}
+{3: [3, 2]}
+MOVE NUMBER >
+236
+sourcePeg is
+{1: [1]}
+targetPeg is
+{3: [3, 2]}
+source and target
+{1: [1]}
+{3: [3, 2]}
+
+next state
+
+STATE
+{1: []}
+{2: []}
+{3: [3, 2, 1]}
+You chose 5

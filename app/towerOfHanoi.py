@@ -2,6 +2,7 @@ import randomStrategy
 import hcStrategy
 import backtrackingStrategy
 import aStarStrategy
+import stateSpace
 
 print 'Welcome to our implementation of the 4 strategies for Tower of Hanoi. '
 print 'Menu'
@@ -10,9 +11,15 @@ print '1. Random'
 print '2. Hill Climbing'
 print '3. Backtracking'
 print '4. A*'
+print '5. Quit'
 
 while True:
-    a = raw_input()
-    print 'You chose ' + a
-    print 2**20-1
+    command = raw_input()
+    print 'You chose ' + command
+    if command == "1":
+        randomStrategy.randomHanoi("input.txt", "output.txt")
+        # state = stateSpace.readStateFromFile("input.txt")
+        # print state.isValid()
+    elif command == "5":
+        exit()
     

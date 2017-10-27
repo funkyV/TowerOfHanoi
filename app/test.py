@@ -1,2 +1,3 @@
-a = 2
-print a != 1
+import random
+length = 3
+# print random.randint(, length - 1)

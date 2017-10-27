@@ -50,15 +50,20 @@ class Peg:
     def isValid(self):
         length = len(self.items) - 1
 
-        if length <= 1:
+        if length == 0:
             return True
         if len(self.items) % 2 != 0:
             return self.items[length].weight < self.items[length - 1].weight
 
         for i in range(length):
             twoDisks = self.items[i : i+2]
-            if twoDisks[0] < twoDisks[1]:
+            print twoDisks[0].weight
+            print twoDisks[1].weight
+            if twoDisks[0].weight < twoDisks[1].weight:
+                print 
                 return False
+
+        return True
 
 class Disk:
     def __init__(self, weight):
@@ -69,7 +74,7 @@ class State:
         self.pegs = pegs
 
     def printState(self):
-        print "STATE"
+        # print "STATE"
         for peg in self.pegs:
             print peg.disksOn()
 
@@ -88,34 +93,33 @@ class State:
             if not peg.isValid():
                 return False
         return True
-    def randomValidPeg(self, source = None):   
-        length = len(self.pegs) - 1
-
-        randomIndex = random.randint(0, length)
+    def randomValidPeg(self):
+        length = len(self.pegs)
+        randomIndex = random.randint(0, length-1)
+        # print randomIndex
         randomPeg = self.pegs[randomIndex]
-        print "prima data"
-        print randomIndex
-        if source == None:
-            condition = randomPeg.isEmpty()
-            print ("conditie 1")
-        else:
-            condition = randomPeg.isEmpty() and randomPeg.isEqual(source, True)
-            print ("conditie 2")
-        while condition :
-            print "In loop"
-            randomIndex = random.randint(0, length)
-            randomPeg = self.pegs[randomIndex]
-
-            if source == None:
-                condition = randomPeg.isEmpty()
-                print ("conditie 1")
-            else:
-                condition = randomPeg.isEmpty() and randomPeg.isEqual(source, True)
-                print ("conditie 2")
-
-            print randomIndex
+        # print randomPeg.disksOn()
 
         return randomPeg
+
+        # print "\nfirst random peg is"
+        # print randomPeg.disksOn()
+        # print "source"
+        # print source
+        
+        # if source == None or source.isEmpty():
+        #     while randomPeg.isEmpty() and randomPeg.isValid() == False:
+        #         randomIndex = random.randint(0, length-1)
+        #         randomPeg = self.pegs[randomIndex]
+        #         print "!?"
+        # else:
+        #     while randomPeg.isEqual(source, True) and randomPeg.isEqual(source) and randomPeg.isValid() == False and randomPeg.isEmpty():
+        #         randomIndex = random.randint(0, length - 1)
+        #         randomPeg = self.pegs[randomIndex]
+        #         print "!"
+        # print "\final random peg is"
+        # print randomPeg.disksOn()
+        # return randomPeg
 
     def nextState(self, sourcePeg, targetPeg):
         if sourcePeg.isEqual(targetPeg):
@@ -145,47 +149,43 @@ def readStateFromFile(name):
     configFile.close()
 
     return State(pegs)
+
 print "initial state\n"
 initialState = readStateFromFile("input.txt")
 initialState.printState()
 
+print initialState.isValid()
 
+# # initialState.nextState(initialState.pegs[0], initialState.pegs[2])
+# # initialState.printState()
 
-# print initialState.isValid()
+# print "final state\n"
+finalState = readStateFromFile("output.txt")
+finalState.printState()
 
-# initialState.nextState(initialState.pegs[0], initialState.pegs[2])
-# initialState.printState()
+initialState.randomValidPeg()
+# # print finalState.isEqual(initialState)
 
-# finalState = readStateFromFile("output.txt")
-# finalState.printState()
+# def randomMoveFrom(state):
+#     sourcePeg = state.randomValidPeg()
+#     print "sourcePeg is"
+#     print sourcePeg.disksOn()
+#     targetPeg = state.randomValidPeg(sourcePeg)
+#     print "targetPeg is"
+#     print targetPeg.disksOn()
+#     return (sourcePeg, targetPeg)
 
-# print finalState.isEqual(initialState)
+# i = 0;
+# while initialState.isEqual(finalState) == False:
+#     print "MOVE NUMBER >"
+#     print i
+#     sourceAndTarget = randomMoveFrom(initialState)
+#     print "source and target"
+#     print sourceAndTarget[0].disksOn()
+#     print sourceAndTarget[1].disksOn()
 
-def randomMoveFrom(state):
-    sourcePeg = state.randomValidPeg()
-    # return sourcePeg.disksOn()
-    targetPeg = state.randomValidPeg(sourcePeg)
+#     print "\nnext state\n"
 
-    print sourcePeg.disksOn()
-    print targetPeg.disksOn()
-    # return (sourcePeg, targetPeg)
-# def solveHanoi(initialState, finalState):
-#     currentState = initialState
-#     while not currentState.isEqual(finalState):
-
-
-# test
-print "god help us"
-randomMoveFrom(initialState)
-# test
-
-# print "blabls"
-# sourceAndTarget = randomMoveFrom(initialState)
-# print "source and target"
-# print sourceAndTarget[0].disksOn()
-# print sourceAndTarget[1].disksOn()
-
-# print "\nnext state\n"
-
-# initialState.nextState(sourceAndTarget[0], sourceAndTarget[1])
-# initialState.printState()
+#     initialState.nextState(sourceAndTarget[0], sourceAndTarget[1])
+#     initialState.printState()
+#     i += 1
